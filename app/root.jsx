@@ -37,7 +37,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <div className='overflow-container'>
+        <div className='overflow-container overflow-x-hidden md:overflow-auto'>
           <header className='desktop-nav'>
             <Navbar data={data} renderedLinks={renderedLinks} />
           </header>

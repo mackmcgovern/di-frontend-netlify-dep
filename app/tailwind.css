@@ -6,11 +6,11 @@
 
 @layer base {
   body {
-    @apply relative;
+    @apply overflow-x-hidden md:overflow-x-auto;
   }
 
   .overflow-container {
-    @apply overflow-x-hidden md:overflow-x-auto;
+    @apply overflow-x-hidden md:overflow-x-auto relative;
   }
 
   p,
