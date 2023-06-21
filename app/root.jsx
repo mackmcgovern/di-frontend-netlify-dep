@@ -37,22 +37,24 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <header className='desktop-nav'>
-          <Navbar data={data} renderedLinks={renderedLinks} />
-        </header>
-        <header className='mobile-nav'>
-          <MobileNavbar data={data} renderedLinks={renderedLinks} />
-        </header>
-        <Outlet />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.ENV = ${JSON.stringify(envData.ENV)}`,
-          }}
-        />
-        <Footer />
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
+        <div className='overflow-container'>
+          <header className='desktop-nav'>
+            <Navbar data={data} renderedLinks={renderedLinks} />
+          </header>
+          <header className='mobile-nav'>
+            <MobileNavbar data={data} renderedLinks={renderedLinks} />
+          </header>
+          <Outlet />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `window.ENV = ${JSON.stringify(envData.ENV)}`,
+            }}
+          />
+          <Footer />
+          <ScrollRestoration />
+          <Scripts />
+          <LiveReload />
+        </div>
       </body>
     </html>
   )

@@ -6,13 +6,17 @@
 
 @layer base {
   body {
+    @apply relative;
+  }
+
+  .overflow-container {
     @apply overflow-x-hidden md:overflow-x-auto;
   }
 
   p,
   a,
   li,
-  a {
+  s a {
     @apply font-sans tracking-wide;
   }
 
