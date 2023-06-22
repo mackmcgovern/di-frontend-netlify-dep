@@ -9,9 +9,9 @@ export default function InfoCard({ cardData, image, baseUrl }) {
 
   return (
     <Link to={linkPath}>
-      <div className='w-[20rem] h-[30rem] shadow-md rounded-sm pb-12 overflow-hidden hover:scale-[1.02] hover:shadow-lg transitions ease duration-500'>
+      <div className='w-[18rem] h-[27rem]  md-w-[20rem] md-h-[30rem] shadow-md rounded-sm pb-12 overflow-hidden hover:scale-[1.02] hover:shadow-lg transitions ease duration-500'>
         <div className='flex flex-col items-center gap-y-8'>
-          <div className='w-[20rem] rounded-t-sm overflow-clip'>
+          <div className='w-[18rem] md-w-[20rem] rounded-t-sm overflow-clip'>
             <img
               src={imageUrl}
               alt=''

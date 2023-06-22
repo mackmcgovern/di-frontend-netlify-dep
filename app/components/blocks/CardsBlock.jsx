@@ -1,6 +1,7 @@
 import CardVarient from '~/components/CardVarient'
 import { Link, useCatch } from '@remix-run/react'
 
+// SERVICES CARDS
 export default function CardsBlock({ data, baseUrl }) {
   const { link, photoCard, photos, heading, padding } = data
   const paddingTop = `${padding?.top ? padding.top : 2}`

@@ -24,7 +24,7 @@ export default function CardVarient({ cardData, cardImage, baseUrl }) {
               </div>
             )}
             <div className='absolute bottom-0 right-0 left-0 hover:text-8xl transition duration-75'>
-              <p className='text-white text-2xl md:text-5xl font-serif font-[300] drop-shadow-sm px-8 mb-[10%] text-center leading-[0.9]'>
+              <p className='text-white text-2xl md:text-4xl font-serif font-[300] drop-shadow-sm px-8 mb-[10%] text-center leading-[0.9]'>
                 {cardHeading}
               </p>
             </div>

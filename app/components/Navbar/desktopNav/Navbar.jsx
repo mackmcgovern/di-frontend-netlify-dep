@@ -9,9 +9,9 @@ export default function Navbar({ data }) {
 
   return (
     <>
-      <div className='container px-4 xl:px-8 md:flex justify-between items-center'>
+      <div className='xl:px-8 md:flex justify-between items-center'>
         <Link to='/'>
-          <div className='flex items-center'>
+          <div className='flex items-center container px-4'>
             <img
               src='images/logo.png'
               alt='logo'
