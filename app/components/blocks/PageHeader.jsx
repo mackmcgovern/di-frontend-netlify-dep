@@ -30,7 +30,7 @@ export default function PageHeader({ data }) {
   }
 
   return (
-    <div className={bgColor}>
+    <div className={`${bgColor} mt-20 md:mt-0`}>
       <div className='container px-4 md:px-14 h-40 md:h-44 flex justify-center items-center box-border'>
         <div className='flex flex-col max-w-fit gap-y-4 items-center'>
           {heading && (

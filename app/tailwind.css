@@ -7,7 +7,7 @@
 @layer base {
   html,
   body {
-    @apply w-full overflow-x-hidden relative;
+    @apply w-full overflow-x-hidden relative !important;
   }
 
   p,
@@ -22,13 +22,12 @@
   }
 
   h2 {
-    @apply font-serif text-heading-blue text-[2.4rem] md:text-[3.5rem] leading-[0.9];
+    @apply font-serif text-heading-blue text-[2.2rem] md:text-[3.5rem] leading-[0.9];
   }
 
   p {
     font-size: 1.1rem;
-    line-height: 1.9rem;
-    @apply font-sans text-off-black tracking-wide;
+    @apply font-sans text-off-black tracking-wide leading-7;
   }
 
   input,
@@ -85,6 +84,10 @@
   }
 
   /* STARTING HERE MOBILE MENU  */
+  .mobile-nav {
+    @apply fixed top-0 z-40 left-0 right-0;
+  }
+
   .mobile-nav nav {
     @apply w-full;
   }
@@ -110,7 +113,7 @@
   }
 
   .mobile-nav ul.main-nav-links {
-    @apply z-30 fixed top-[5rem] left-[100%] bottom-0 pt-12  transition duration-300 ease-in-out bg-gray-100 text-2xl font-thin text-btn-primary-blue overflow-y-scroll w-full;
+    @apply z-30 fixed top-[2rem] left-[100%] bottom-0 pt-12  transition duration-300 ease-in-out bg-gray-100 text-2xl font-thin text-btn-primary-blue overflow-y-scroll w-full;
   }
   /* .mobile-nav ul.main-nav-links {
     @apply z-30 absolute right-0 top-[5rem] left-0 bottom-0 pt-12 translate-x-[100%] transition duration-300 ease-in-out bg-gray-100 text-2xl font-thin text-btn-primary-blue overflow-y-scroll;

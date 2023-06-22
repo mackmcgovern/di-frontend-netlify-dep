@@ -16,7 +16,7 @@ export default function InfoBlockSmall({ data }) {
       <div className='container flex flex-col items-center gap-y-6 lg:flex-row justify-around'>
         <div className='text-center lg:text-left'>
           {heading && (
-            <p className='info-block-heading py-4 lg:py-0 font-sans text-heading-blue text-4xl'>
+            <p className='info-block-heading py-4 lg:py-0 font-sans text-heading-blue text-3xl md:text-4xl'>
               {heading}
             </p>
           )}
